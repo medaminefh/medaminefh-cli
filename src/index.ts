@@ -1,6 +1,17 @@
+import fs from "node:fs";
 import prompts = require("prompts");
 import { green, bold, bgLightYellow, bgBlue, lightBlue, blue } from "kolorist";
 import terminalImage from "terminal-image";
+import { exit, cwd } from "node:process";
+
+try {
+	const data = fs.readFileSync(cwd() + "/src/data.json", "utf-8");
+
+	console.log({ data: JSON.parse(data).experiences });
+} catch (error) {
+	console.log("errororooror", error);
+	exit(1);
+}
 
 try {
 	(async () => {
@@ -27,6 +38,10 @@ try {
 						{
 							title: "Contact me",
 							value: "contact",
+						},
+						{
+							title: "Quit",
+							value: "quit",
 						},
 					],
 				},
@@ -63,7 +78,10 @@ try {
 				console.log(
 					lightBlue("Twitter") + " : " + "https://twitter.com/medaminefh\n\n"
 				);
-			} else return;
+			} else {
+				console.log("Thanks for visiting! 👋");
+				return;
+			}
 		}
 	})();
 } catch (cancelled) {
