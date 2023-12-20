@@ -1,10 +1,67 @@
 {
     "experiences": [
         {
-            "position":"FullStack developer",
-            "company":"Lobsterware",
-            "start":"",
-            "end":""
+          "company": "Freelance",
+          "position": "programming mentor",
+          "from": "03/01/2023",
+          "until": null,
+          "isCurrent": true,
+          "tools": [
+            "Javascript",
+            "Python",
+            "Typescript",
+            "TailwindCss",
+            "ReactJs",
+            "Vue.js",
+            "Node.js",
+            "Express.js",
+            "Flask",
+            "Django",
+            "GraphQL",
+            "MongoDB",
+            "..."
+          ]
+        },
+        {
+          "company": "Code in place",
+          "position": "Section leader Volunteer",
+          "from": "04/20/2023",
+          "until": "06/01/2023",
+          "isCurrent": false,
+          "tools": ["Python", "Karl", "Graphics", "Console"]
+        },
+        {
+          "company": "Lobsterware",
+          "position": "Javascript developer",
+          "from": "06/14/2022",
+          "until": "03/01/2023",
+          "isCurrent": false,
+          "tools": [
+            "Javascript",
+            "Typescript",
+            "TailwindCss",
+            "Vue.js",
+            "Node.js",
+            "Express.js",
+            "GraphQL",
+            "MongoDB",
+            "..."
+          ]
+        },
+        {
+          "company": "Personal projects",
+          "position": "Full-stack developer",
+          "from": "01/01/2019",
+          "until": "09/13/2022",
+          "isCurrent": false,
+          "tools": [
+            "Javascript",
+            "ReactJs",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "..."
+          ]
         }
-    ]
+      ]
 }
