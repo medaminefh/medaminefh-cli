@@ -1,19 +1,12 @@
+#!/usr/bin/env node
+
 import fs from "node:fs";
 import prompts = require("prompts");
 import { green, bold, bgLightYellow, bgBlue, lightBlue, blue } from "kolorist";
-import terminalImage from "terminal-image";
 import { exit, cwd } from "node:process";
 
 try {
-	const data = fs.readFileSync(cwd() + "/src/data.json", "utf-8");
-
-	console.log({ data: JSON.parse(data).experiences });
-} catch (error) {
-	console.log("errororooror", error);
-	exit(1);
-}
-
-try {
+	const data = JSON.parse(fs.readFileSync(cwd() + "/src/data.json", "utf-8"));
 	(async () => {
 		while (true) {
 			const result = await prompts([
@@ -49,17 +42,17 @@ try {
 
 			const answer = result.pickAQuestion;
 			if (answer == "whoami") {
-				console.log(await terminalImage.file("me.jpeg", { width: "10%" }));
 				console.log(
 					"\nThis is " +
 						green("Mohamed Amine Fhal") +
 						", a self-taught software developer from Tunisia\n"
 				);
-			} else if (answer == "exp")
+			} else if (answer == "exp") {
+				console.log(data.experiences);
 				console.log(
 					"\nI've +1 year of experience in the frontend and backend web dev\n"
 				);
-			else if (answer == "techs")
+			} else if (answer == "techs")
 				console.log(
 					"\nI've used various technologies in my journey, but most of them are in the " +
 						bgLightYellow(bold(" JS ")) +
@@ -85,6 +78,5 @@ try {
 		}
 	})();
 } catch (cancelled) {
-	//console.log(cancelled.message);
-	process.exit(1);
+	exit(1);
 }

@@ -1,11 +1,14 @@
 {
   "name": "medaminefh",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a CLI for displaying my infos",
+  "bin": {
+    "medaminefh":"/dist/index.js"
+  },
   "main": "index.js",
   "scripts": {
     "build": "tsc -p .",
-    "start": "npm run build && node src/dist/index.js"
+    "start": "pnpm run build && node dist/index.js"
   },
   "type": "module",
   "keywords": [],
@@ -17,7 +20,6 @@
     "@types/prompts": "^2.4.4",
     "kolorist": "^1.8.0",
     "prompts": "^2.4.2",
-    "terminal-image": "^2.0.0",
     "typescript": "^5.1.6"
   }
 }

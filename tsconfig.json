@@ -1,9 +1,9 @@
 {
 	"extends": "@tsconfig/node18/tsconfig.json",
 	"include": ["src/index.ts"],
-	"exclude": ["src/dist", "node_modules"],
+	"exclude": ["dist", "node_modules"],
 	"compilerOptions": {
-		"outDir": "src/dist",
+		"outDir": "dist",
 		"strict": false,
 		"resolveJsonModule": true
 	}
