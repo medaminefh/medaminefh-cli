@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import fs from "node:fs";
-import prompts = require("prompts");
+import prompts from "prompts";
 import { green, bold, bgLightYellow, bgBlue, lightBlue, blue } from "kolorist";
 import { exit, cwd } from "node:process";
 

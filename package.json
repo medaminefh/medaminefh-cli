@@ -12,7 +12,12 @@
   },
   "type": "module",
   "keywords": [],
-  "author": "",
+  "author": "Mohamed Amine Fhal <fhal.mohamed.amine@gmail.com>",
+  "homepage": "https://github.com/medaminefh/medaminefh-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medaminefh/medaminefh-cli.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "@tsconfig/node18": "^18.2.0",
