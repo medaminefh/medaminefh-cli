@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import fs from "node:fs";
 import prompts from "prompts";
 import { green, bold, bgLightYellow, bgBlue, lightBlue, blue } from "kolorist";

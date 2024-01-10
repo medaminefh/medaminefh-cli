@@ -3,8 +3,12 @@
 	"include": ["src/index.ts"],
 	"exclude": ["dist", "node_modules"],
 	"compilerOptions": {
+		"lib": ["ESNext"],
+		"target": "esnext",
+		"moduleDetection": "force",
 		"outDir": "dist",
-		"strict": false,
+		"strict": true,
+		"skipLibCheck": true,
 		"resolveJsonModule": true
 	}
 }
