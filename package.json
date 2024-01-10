@@ -1,6 +1,6 @@
 {
   "name": "medaminefh",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a CLI for displaying my infos",
   "bin": {
     "medaminefh": "./dist/index.js"
